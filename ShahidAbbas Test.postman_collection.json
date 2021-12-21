@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "33ea07c1-7724-4384-b54e-902f9d98ef2b",
+		"name": "ShahidAbbas Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fulllName\": \" shahid abbas\",\r\n    \"dateOfBirth\": \"1998-12-03\",\r\n    \"address\": \"Rawalpindi\",\r\n    \"jobRole\" : \" Node js developer\",\r\n    \"fullTime\": true,\r\n    \"contractLengthDays\" : 365,\r\n    \"department\": \"backend engr\",\r\n    \"salary\": 3000,\r\n    \"dateJoined\": \"2021-08-20\",\r\n    \"status\": \"active\",\r\n    \"phone\": \"03747377575487548\",\r\n    \"email\": \"shahid@gmail.com\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dev/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add employee attendance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"date\": \"1998-12-03\",\r\n     \"in\": \"1998-12-03\",\r\n    \"out\": \"1998-12-03\"\r\n   \r\n   \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dev/employee/%7Bid%7D/attendance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"employee",
+						"%7Bid%7D",
+						"attendance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add/update employee payroll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"date\": \"1998-12-03\",\r\n     \"in\": \"1998-12-03\",\r\n    \"out\": \"1998-12-03\"\r\n   \r\n   \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dev/employee/%7Bid%7D/attendance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"employee",
+						"%7Bid%7D",
+						"attendance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fulllName\": \" shahid abbas\",\r\n    \"dateOfBirth\": \"1998-12-03\",\r\n    \"address\": \"Rawalpindi\",\r\n    \"jobRole\" : \" Node js developer\",\r\n    \"fullTime\": true,\r\n    \"contractLengthDays\" : 365,\r\n    \"department\": \"backend engr\",\r\n    \"salary\": 3000,\r\n    \"dateJoined\": \"2021-08-20\",\r\n    \"status\": \"active\",\r\n    \"phone\": \"03747377575487548\",\r\n    \"email\": \"shahid@gmail.com\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dev/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/dev/employee/shahid@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"employee",
+						"shahid@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get employee attendance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/dev/employee/%7Bid%7D/attendance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"employee",
+						"%7Bid%7D",
+						"attendance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get employee payroll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/dev/employee/%7Bid%7D/payroll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"employee",
+						"%7Bid%7D",
+						"payroll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/dev/employee/%7Bid%7D",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"employee",
+						"%7Bid%7D"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/dev/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
